@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* padding and border calculate with the width of the element  */
+    scroll-behavior: smooth;
+
+}
+
+header {
+    background-color: rgb(223, 221, 221);
+     width: 100%; 
+    position: fixed;
+    z-index: 999;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+
+.logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(15, 15, 255);
+    font-weight: 700;
+    /* em ===> default font size (16px) */
+    font-size: 1.8em;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(15, 15, 255);
+   padding-left: 30px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: black;
+}
+
+section {
+    padding: 100px 200px;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* easy way to put a pic in your web site  */
+    background: url(../codzila/img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.main h2 .a {
+color: azure;
+font-size: 15px;
+}
+
+.main h2 .b { 
+    /* we must do inline block because block element we can not 
+    do margin top and buttom  */
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 2em;
+    color: rgb(15, 15, 255);
+    font-weight: 600;
+}
+
+.main h3 {
+    color: azure;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+.main .main-btn {
+    display: inline-block;
+    width: 34%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 0.6em 0.6em;
+    letter-spacing: 1px;
+    color: azure;
+    text-decoration: none;
+    background-color: rgb(15, 15, 255) ;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    transition: 0.7s ease;
+
+}
+
+.main .main-btn:hover {
+ background-color: rgb(64, 64, 255);
+ transform: scale(1.1);
+}
+
+.main .btns a {
+    color: azure;
+    font-size: 1.3em;
+    padding-right: 14px;
+}
+
+
+ .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+}
+ .mains {
+    display: flex;
+    justify-content: center;
+   color: rgb(15, 15, 255) ;
+   font-weight: 700;
+   font-size: 2.3em;
+   margin-bottom: 40px;
+   margin-top: -25px;
+}
+
+.content .icon {
+    color: rgb(15, 15, 255) ;
+    font-size: 6.8em;
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 20px;
+}
+
+ .content .info h2 {
+    color: rgb(15, 15, 255) ;
+    font-size: 1em;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+ .content .info p {
+    font-weight: 600;
+    font-size: 0.9em;
+    color: rgb(29, 29, 29);
+    width: 100%;
+    text-align: center;
+    
+}
+
+ .content .card {
+    /* border: 5px solid rgb(197, 184, 184); */
+    width: 15em;
+    border-radius: 5px;
+    margin: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0px 5px 25px rgba(1, 1, 1, 15%);
+
+}
+
+ .content .card:hover {
+    transform: scale(1.05);
+}
+
+
+.projects {
+    background-color: rgb(2, 16, 41);
+    margin-bottom: 100px;
+}
+
+.projects .content .card-two {
+    width: 14em;
+    border-radius: 10px;
+    background-color: azure;
+    transition: 0.3s ease;
+    outline: 1px white solid;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.projects .content .card-two img{
+    width: 14em;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+
+.projects .content .card-two:hover {
+    transform: scale(1.05);
+}
+
+.projects .content .card-two .script {
+    font-size: 0.7em;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.projects .content .card-two strong span {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7em;
+    margin-left: 8px;
+}
+
+.projects .content .card-two a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.7em;
+    color: rgb(15, 15, 255) ;
+    margin-left: 55px;
+    
+}
+
+.projects .content .card-two a:hover {
+    color: black;
+}
+
+ .content .card .info .z {
+    color: black;
+}
+
+.foot .foott {
+    display: flex;
+    align-items: center;
+    background-color:  rgb(2, 16, 41);
+    height: 3em;
+
+}
+
+.foot .foott .social  {
+position: absolute;
+right: 0;
+margin-right: 15px;
+
+}
+
+.foot .foott .social a {
+
+    color: white;
+    margin-left: 5px;
+}
+
+.foot .foott .em .one  {
+color: azure;
+margin-left: 10px;
+}
+
+.foot .foott .em .one span {
+    color: rgb(15, 15, 255) ;
+}
+
+
+@media (max-width:1023px) {
+    header {
+        padding: 10px 15px;
+    }
+
+    .navigation a {
+        font-size: 15px;
+        margin-left: -20px;
+    }
+
+    
+
+    section {
+        padding: 50px 100px;
+    
+    }
+
+    .main {
+        padding-left: 25px;
+    }
+    
+    .main h2 .a {
+       
+        font-size: 14px;
+        }
+        
+        .main h2 .b { 
+           
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-size: 1.7em;
+        }
+
+        .main h3 { 
+            font-size: 1.3em;
+            letter-spacing: 0.5px;
+        }
+
+        .mains {
+           
+           font-size: 2em;
+        }
+
+        .main .main-btn {
+           
+            width: 41%;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            padding: 0.6em 0.6em;
+            letter-spacing: 1px;
+            color: azure;
+            text-decoration: none;
+            background-color: rgb(15, 15, 255) ;
+            border-radius: 7px;
+            font-weight: 400;
+            font-size: 15px;
+            text-align: center;
+            transition: 0.7s ease;
+        
+        }
+        
+
+        
+}
+
+
+@media (max-width:850px) {
+
+    section {
+        padding: 50px 60px;
+    
+    }
+
+}
